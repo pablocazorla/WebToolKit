@@ -7,8 +7,8 @@
 		}, custom || {});		
 			
 		return this.each(function(){
-			var $tabs = $(this).find('li'),
-				$contents = $(this).next(setting.content).find('li'),
+			var $tabs = $(this).find('> li'),
+				$contents = $(setting.content).find('> li'),
 				current = setting.initial;
 			
 				

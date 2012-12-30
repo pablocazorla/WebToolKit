@@ -5,22 +5,43 @@
 	<title>WebToolKit</title>	
 	<!-- CSS -->	
 	<link type="text/css" rel="stylesheet" href="css/reset.css">
-	<link type="text/css" rel="stylesheet" href="css/tabs.css">
 	<link type="text/css" rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
-<ul class="tabs mainTabs">
-	<li class="current">CSS Styler</li>
-	<li>Image Mapper</li>
-	<li>Device Emulator</li>
+<menu class="mainMenu">
+<ul class="tabs" id="mainTabs">
+<li class="current">CSS Styler</li>
+<li>Image Mapper</li>
+<li>Device Emulator</li>
 </ul>
-<ul class="tabsContent">
-	<li class="current">CSS Styler</li>
-	<li>Image Mapper</li>
-	<li>Device Emulator</li>
+</menu>
+<ul class="tabsContent" id="mainTabsContent">
+<li class="current">
+	<div class="leftColumn">
+		<div id="backStyler">
+			<a id="stylerElement" href="">Button</a>
+		</div>
+	</div>	
+	<div class="panel">
+<ul class="tabs styleTabs" id="styleTabs">
+<li class="current">A</li>
+<li>B</li>
+<li>C</li>
 </ul>
-	
+<ul class="tabsContent" id="styleTabsContent">
+	<li class="current">A</li>
+	<li>B</li>
+	<li>C</li>	
+</ul>
+	</div>	
+</li>
+<li>Image Mapper</li>
+<li>Device Emulator</li>
+</ul>
+<footer>
+	Copyright 2012. Pablo Cazorla.
+</footer>
 	<script src="js/libs/jquery-1.8.3.min.js"></script>
 	<script src="js/observable.js"></script>
 	<script src="js/cssStyler.js"></script>
