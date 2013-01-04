@@ -6,6 +6,7 @@
 	<!-- CSS -->	
 	<link type="text/css" rel="stylesheet" href="css/reset.css">
 	<link type="text/css" rel="stylesheet" href="css/style.css">
+	<link type="text/css" rel="stylesheet" href="css/slider.css">
 
 </head>
 <body>
@@ -30,7 +31,18 @@
 <li>C</li>
 </ul>
 <ul class="tabsContent" id="styleTabsContent">
-	<li class="current">A</li>
+	<li class="current">
+		<div class="stylerField">
+			<div class="slider" id="width-ctrl"></div>			
+		</div>
+		<div class="stylerField">
+			<div class="slider" id="height-ctrl"></div>			
+		</div>
+		
+		
+		
+		
+	</li>
 	<li>B</li>
 	<li>C</li>	
 </ul>
@@ -43,8 +55,9 @@
 	Copyright 2012. Pablo Cazorla.
 </footer>
 	<script src="js/libs/jquery-1.8.3.min.js"></script>
-	<script src="js/observable.js"></script>
-	<script src="js/cssStyler.js"></script>
 	<script src="js/jquery.tabs.js"></script>
+	<script src="js/observable.js"></script>
+	<script src="js/cssStyler.js"></script>	
+	<script src="js/slider.js"></script>
 	<script src="js/app.js"></script>
 </body>

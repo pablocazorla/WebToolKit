@@ -5,5 +5,22 @@ $('document').ready(function(){
 	$('#styleTabs').tabs({content : '#styleTabsContent'});
 	
 	
+	
+	$('#width-ctrl').slider({
+		max : 400,
+		observable : styler.style.width
+	});
+	$('#height-ctrl').slider({
+		max : 400,
+		observable : styler.style.height
+	});
+	
+
+	
+	
+	
+	
+	
+	
 });
 

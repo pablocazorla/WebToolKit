@@ -1,9 +1,12 @@
-var cssStyler = (function(){	
-	var cs = function(){
+var styler = (function(){	
+	var s = function(){
+		
+		var elem = $('#stylerElement');
+		
 		
 		this.style = {
-			width : new observable('100px'),
-			height : new observable('100px')
+			width : new observable('100px','width',elem),
+			height : new observable('100px','height',elem)
 		}
 		
 		
@@ -13,5 +16,5 @@ var cssStyler = (function(){
 		
 		
 	}
-	return new cs();
+	return new s();
 })();

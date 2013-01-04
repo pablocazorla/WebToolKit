@@ -1,0 +1,60 @@
+@charset "UTF-8";
+/* Slider ********************************/
+.slider{
+	position:relative;
+	background:#DDD;
+	margin: 20px 0 20px 55px;
+}
+.slider,.range{
+	height:3px;
+}
+.range{
+	background:#999;
+	top:0;
+	width:0;
+}
+.range,
+.slider .pin,
+.slider .pin:before,
+.slider .viewer,
+.slider .viewer-input{
+	display:block;
+	position:absolute;
+}
+.slider .pin{
+	width:10px;height:15px;cursor:pointer;top:5px;left:-4px;
+}
+.slider .pin:before{
+	width:0;height:0;
+	content:'';
+	border-left:5px solid transparent;
+	border-right:5px solid transparent;
+	border-bottom:8px solid #999;
+}
+.slider .pin:hover:before{
+	border-bottom:8px solid #333;
+}
+.slider .viewer{
+	line-height:13px;
+	font-size:11px;
+	color:#EEE;
+	width:50px;
+	text-align: right;
+	top:-5px;
+	left:-55px;
+}
+.slider .viewer-input{
+	height:13px;
+	width:50px;
+	padding:1px 0;
+	font-size:11px;
+	color:#333;
+	border:solid 1px #666;
+	text-align: right;
+	top:-5px;
+	left:-55px;
+	display:none;
+}
+
+
+
